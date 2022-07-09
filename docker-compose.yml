@@ -1,0 +1,19 @@
+version: "3"
+services:
+  sb-jacob:
+    container_name: sb-jacob
+    restart: unless-stopped
+    build: .
+    ports:
+    - '5000:5000'
+    links:
+    - 'mongo'
+
+  ## Optional: MongoDB if you havent installed it
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+    - '/home/dockerdata/mongo:/data/db'
+    ports:
+    - '27017:27017'

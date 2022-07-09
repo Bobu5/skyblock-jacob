@@ -27,3 +27,5 @@ copy the `ct-module` folder (rename it if you want to) to your chattriggers modu
 after doing so and having it loaded in, to scan contest data open the detailed calendar (by clicking on the clock), press h, go to next page and repeat until you're on the last page
 
 after that the data is now collected and to upload it to the api run `/uploadjacobdata` (make sure to edit lines 106 and 109 on `main.js`)
+
+**still not getting the events data even after using the /uploadjacobdata command ?, make sure MongoDB is installed**
