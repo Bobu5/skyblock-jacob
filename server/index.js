@@ -26,10 +26,10 @@ app.get('/api/upcomingEvents', async (req, res) => {
 app.post('/api/events', async (req, res) => {
     if (req.body.secret !== process.env.SECRET) {
         res.status(401);
-        res.send('no');
+        res.send('Are you sure you had the correct secret key?');
     } else {
         await events.insert(req.body.events);
-        res.send('done');
+        res.send('Jacob Data Received');
     }
 });
 
