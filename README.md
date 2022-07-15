@@ -8,10 +8,12 @@ npm i
 npm run build
 ```
 Then make a `.env` file on the `server` folder
+Note : If you were running this in a docker container, dont forget to add `MONGO_URI=mongo/skyblock` at the .env 
 ```
 PORT=5000
 SECRET=some random string of characters
 ```
+
 Then run the server
 ```bash
 # on the server/ folder
